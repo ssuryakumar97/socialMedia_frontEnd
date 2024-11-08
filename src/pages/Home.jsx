@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Topbar from "../components/topbar";
+import Topbar from "../components/Topbar";
 import styled from "styled-components";
 import PostComponent from "../components/postComponent";
 import { publicRequest } from "../../requestMethods";

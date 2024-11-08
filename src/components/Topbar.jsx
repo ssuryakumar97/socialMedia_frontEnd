@@ -33,6 +33,12 @@ const Rightfontsdiv = styled.div`
 `;
 
 const Topbar = () => {
+
+  const handleLogin = () => {
+    localStorage.removeItem("data");
+    navigate("/login");
+  };
+
   return (
     <TopbarContainer>
       <Leftdiv><Logodiv>LOGO</Logodiv></Leftdiv>
@@ -49,12 +55,12 @@ const Topbar = () => {
           </Link>
         </Rightfontsdiv>
         <Rightfontsdiv>
-          <Link to="/login">
+          <Link onClick={handleLogin}>
             Login
           </Link>
         </Rightfontsdiv>
         <Rightfontsdiv>
-           <Link to="/login">
+           <Link onClick={handleLogin}>
             Logout
            </Link>
         </Rightfontsdiv>

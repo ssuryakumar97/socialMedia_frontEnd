@@ -28,6 +28,7 @@ const PrivateRoute = ({ isAuthenticated }) => {
 
 function App() {
   const [user, setUser] = useState({});
+ const userData = JSON.parse(localStorage.getItem("data"))
 
   return (
     <>
@@ -37,9 +38,10 @@ function App() {
             {/* <Route path='/' element={<Home/>} /> */}
             <Route path="/register" element={<Register />} />
             <Route path="/login" element={<Login />} />
-            <Route path="/createPost" element={<CreatePost />} />
-            <Route path="/" element={<PrivateRoute isAuthenticated={user} />}>
+            
+            <Route path="/" element={<PrivateRoute isAuthenticated={userData} />}>
               <Route path="/" element={<Home />} />
+              <Route path="/createPost" element={<CreatePost />} />
             </Route>
           </Routes>
         </MyContext.Provider>

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Topbar from "../components/Topbar";
 import styled from "styled-components";
-import PostComponent from "../components/postComponent";
+import PostComponent from "../components/PostComponent";
 import { publicRequest } from "../../requestMethods";
 
 const MiddleContainer = styled.div`

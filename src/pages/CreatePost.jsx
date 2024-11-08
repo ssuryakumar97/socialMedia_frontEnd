@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from "styled-components";
-import Topbar from "../components/topbar";
+import Topbar from "../components/Topbar";
 import CreatePostComp from '../components/CreatePostComp';
 
 const MiddleContainer = styled.div`
